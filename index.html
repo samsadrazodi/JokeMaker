@@ -28,6 +28,11 @@
             line-height: 2;
 
         }
+
+        #clear {
+            background-color: yellow;
+            border-radius: 70%;
+        }
     </style>
 </head>
 
@@ -35,19 +40,23 @@
     <div id="container">
         <h1>JOKE Maker</h1>
 
-        <p>Input a category from the categories below and get a new joke in that category!</p>
+        <p>Select a category from the categories below and get a new joke in that category!</p>
 
 
-        <p>programming , Misc, Pun , Spooky, Christmas</p>
+
+        <div>
+            <button id="programming">programming</button>
+            <button id="Misc">Misc</button>
+            <button id="Pun">Pun</button>
+            <button id="Spooky">Spooky</button>
+            <button id="Christmas">Christmas</button>
+            <button id="clear">Clear List</button>
+        </div>
 
 
-        <form action="" id="searchForm">
-            <input type="text" id="first_name" placeholder="joke category">
-            <button>Make Joke</button>
 
-        </form>
 
-        <ul id="launches">
+        <ul id="jokes">
 
         </ul>
     </div>
