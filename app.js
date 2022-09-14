@@ -10,7 +10,7 @@ async function getJoke(categories) {
         // If type == "single", the joke only has the "joke" property
         //alert(res.data.joke);
         newLi.innerText = res.data.joke;
-        newLi.innerHTML += ` --${res.data.category} <br> <b>Category:</b> ${res.data.category}`
+        newLi.innerHTML += ` <br> <b>Category:</b> ${res.data.category}`
 
         ul.append(newLi);
     }
@@ -20,7 +20,7 @@ async function getJoke(categories) {
         //alert(res.data.delivery);
 
         newLi.innerText = ` ${res.data.setup};`
-        newLi.innerHTML += ` -- ${res.data.delivery} <br> <b>Category:</b> ${res.data.category}`
+        newLi.innerHTML += ` --- ${res.data.delivery} <br> <b>Category:</b> ${res.data.category}`
         ul.append(newLi);
 
     }
